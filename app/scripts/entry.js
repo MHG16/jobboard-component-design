@@ -16,4 +16,4 @@ const TestComponent = React.createClass({
 	}
 });
 
-ReactDOM.render(<TestComponent />, document.querySelector('main'));
+ReactDOM.render(<Navigation />, document.querySelector('main'));
