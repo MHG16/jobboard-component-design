@@ -3,6 +3,7 @@ import './../styles/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navigation from './components/navigation.js'
+import FilterBox from './components/FilterBox.js'
 
 // import a module from another file.
 import tiy from './app.js';
@@ -16,4 +17,5 @@ const TestComponent = React.createClass({
 	}
 });
 
-ReactDOM.render(<Navigation />, document.querySelector('main'));
+ReactDOM.render(<Navigation />,  document.querySelector('nav'));
+ReactDOM.render(<FilterBox />,  document.querySelector('main'));
