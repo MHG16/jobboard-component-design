@@ -12,6 +12,7 @@ body {
 img {
 	width: 6em; 
 	vertical-align: middle;
+	padding-left: 2em;  
 }
 
 
@@ -30,6 +31,39 @@ img {
 	text-decoration: none;
 	margin-left: .5em; 
 	font-spacing: -6px; 
+}
+
+.filterbox {
+	border-bottom: 1px solid #d0d0d0;
+
+}
+
+.left {
+	display:inline-block;
+	float:left; 
+
+	.keywords {
+		width: 10em;
+	}
+
+}
+
+.right {
+	display: inline-block;
+	float:left;    
+	margin-left: .5em; 
+
+	.location {
+		width: 10em; 
+	}
+}
+
+.search {
+	margin-left: .5em; 
+	width: 8em;
+	background-color: #3E9A48;
+	color: #F3F1BF; 
+	font-size: 1em;  
 }
 
 
