@@ -35,6 +35,8 @@ img {
 
 .filterbox {
 	border-bottom: 1px solid #d0d0d0;
+	overflow:hidden;  
+	padding-bottom: 1em; 
 
 }
 
@@ -43,10 +45,18 @@ img {
 	float:left; 
 
 	.keywords {
-		width: 10em;
+		width: 20em;
+		height: 2em; 
 	}
 
 }
+
+h1 {
+	font-color: #525252;
+	font-size: 1em;  
+}
+
+
 
 .right {
 	display: inline-block;
@@ -54,18 +64,26 @@ img {
 	margin-left: .5em; 
 
 	.location {
-		width: 10em; 
+		width: 20em; 
+		height: 2em; 
+		vertical-align:top;  
 	}
+}
+
+.button {
+	display: inline-block;  
+	float:left;  
 }
 
 .search {
 	margin-left: .5em; 
-	width: 8em;
+	width: 12em;
 	background-color: #3E9A48;
 	color: #F3F1BF; 
 	font-size: 1em;  
+	padding: .5em 0;  
+	border-radius: .5em; 
 }
-
 
 
 

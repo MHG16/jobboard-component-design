@@ -11,8 +11,10 @@ const FilterBox = React.createClass({
 				<div className='right'>
 					<h1>Location</h1>
 					<input type='text' className='location'/>
+				</div>	
+				<div class='button'>
 					<button type='button' className='search'>Search</button>
-				</div>
+				</div>  
 			</div>
 			);
 	}
