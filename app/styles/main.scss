@@ -89,7 +89,37 @@ h1 {
 	margin-top: 2em; 
 }
 
+.jobrow {
+	border-bottom: 1px solid #d0d0d0;
+}
 
+
+.line1 {
+	color: #0F331D;
+	font-size:1.25em; 
+}
+
+.yesterday {
+	float:right;  
+}
+
+.line2 {
+	font-size: .75em;  
+}
+
+.bullet {
+	float:left;
+}
+
+.keywords > p {
+ 	display: inline-block;
+ 	float:left;
+ 	font-size: 1em;  
+ 	margin-right: .25em; 
+ 	padding: .25em;
+ 	border: 1px solid #E7E9A2;
+ 	background: #FAFBEA;
+}
 
 
 

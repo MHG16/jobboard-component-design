@@ -17,7 +17,7 @@ const TestComponent = React.createClass({
 
 ReactDOM.render(<Navigation />,  document.querySelector('nav'));
 ReactDOM.render(<FilterBox />,  document.querySelector('main'));
-ReactDOM.render(<JobRow />, document.querySelector('jobrow-holder'));
-ReactDOM.render(<InfoBox />, document.querySelector('info-holder'));
-ReactDOM.render(<CompanyBox />, document.querySelector('company-holder'));
+ReactDOM.render(<JobRow />, document.querySelector('.jobrow-holder'));
+ReactDOM.render(<InfoBox />, document.querySelector('.info-holder'));
+ReactDOM.render(<CompanyBox />, document.querySelector('.company-holder'));
 
