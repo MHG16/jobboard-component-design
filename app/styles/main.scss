@@ -132,6 +132,7 @@ h1 {
 
 .infobox {
 	background-color: #FAFBEA;
+	padding:1em 0em 1em 0em;  
 
 	.looking {
 		font-size: 3em;
@@ -171,13 +172,15 @@ h1 {
 
 
 .pictureholder {
-	position:relative;  
+	position:relative;    
 }
 
 
 .featuredlogo {
-	width: 8em; 
-	position:absolute;  
+	width: 16em; 
+	position:absolute;
+	padding-left: 14em;    
+	padding-top: 10em;  
 }
 
 .featured {
@@ -187,6 +190,7 @@ h1 {
 .max {
 	color: #409A48;
 	font-size: 4em;  
+	margin-top: 4em;  
 }
 
 .austin {
