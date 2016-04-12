@@ -2,9 +2,11 @@
 import './../styles/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navigation from './components/navigation.js'
-import FilterBox from './components/FilterBox.js'
-import JobRow from './components/JobRow.js'
+import Navigation from './components/navigation.js';
+import FilterBox from './components/FilterBox.js';
+import JobRow from './components/JobRow.js';
+import InfoBox from './component/InfoBox.js';
+import CompanyBox from './component/CompanyBox';
 
 // import a module from another file.
 import tiy from './app.js';
@@ -20,4 +22,6 @@ const TestComponent = React.createClass({
 
 ReactDOM.render(<Navigation />,  document.querySelector('nav'));
 ReactDOM.render(<FilterBox />,  document.querySelector('main'));
-ReactDOM.render(<JobRow />, document.querySelector('section'));
+ReactDOM.render(<JobRow />, document.querySelector('jobrow-holder'));
+ReactDOM.render(<InfoBox />, document.querySelector('info-holder'));
+
