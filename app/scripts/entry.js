@@ -5,14 +5,9 @@ import ReactDOM from 'react-dom';
 import Navigation from './components/navigation.js';
 import FilterBox from './components/FilterBox.js';
 import JobRow from './components/JobRow.js';
-import InfoBox from './component/InfoBox.js';
-import CompanyBox from './component/CompanyBox';
+import InfoBox from './components/InfoBox.js';
+import CompanyBox from './components/CompanyBox.js';
 
-// import a module from another file.
-import tiy from './app.js';
-
-// Looks like the imported module was a function, because here we're executing it!
-tiy();
 
 const TestComponent = React.createClass({
 	render: function() {
@@ -24,4 +19,5 @@ ReactDOM.render(<Navigation />,  document.querySelector('nav'));
 ReactDOM.render(<FilterBox />,  document.querySelector('main'));
 ReactDOM.render(<JobRow />, document.querySelector('jobrow-holder'));
 ReactDOM.render(<InfoBox />, document.querySelector('info-holder'));
+ReactDOM.render(<CompanyBox />, document.querySelector('company-holder'));
 

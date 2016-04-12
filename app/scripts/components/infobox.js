@@ -5,7 +5,7 @@ const InfoBox = React.createClass({
 		return (
 			<div className='infobox'>
 				<h1>Looking for a Job?</h1>
-				<span>Create a fresh jobs profile and</span>
+				<span class="profile">Create a fresh jobs profile and</span>
 				<span>let employers come to you</span>
 				<ul>
 					<li>Employers Search our database and contact you</li>
