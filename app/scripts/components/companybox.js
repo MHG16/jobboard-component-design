@@ -6,12 +6,12 @@ import featured from './../../images/featured.jpg';
 const CompanyBox = React.createClass({
 	render: function() {
 		return (
-			<div>
-				<h1 className="">Company Information</h1>
-				<img src={featuredlogo} />
-				<img src={featured} />
-				<h1 className="">Max Play</h1>
-				<h2 className="">Austin Texas</h2>
+			<div class='companyinfo'>
+				<h1 className="info">Company Information</h1>
+				<img className='featuredlogo'src={featuredlogo} />
+				<img className='featured'src={featured} />
+				<h1 className="max">Max Play</h1>
+				<h2 className="austin">Austin Texas</h2>
 
 			</div>   
 			);

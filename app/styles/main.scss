@@ -54,7 +54,7 @@ img {
 }
 
 h1 {
-	font-color: #525252;
+	color: #525252;
 	font-size: 1em;  
 }
 
@@ -91,6 +91,7 @@ h1 {
 
 .jobrow {
 	border-bottom: 1px solid #d0d0d0;
+	overflow: hidden; 
 }
 
 
@@ -122,5 +123,54 @@ h1 {
 }
 
 
+.infobox {
+	background-color: #FAFBEA;
 
+	.looking {
+		font-size: 2em;
+		font-weight: 600;  
+	}
+
+	.profile {
+		font-size: 1em; 
+		color: #393C2E;
+	}
+
+	.features > li {
+		font-size: 1em; 
+	}
+
+
+	.createprofile {
+		width: 20em;
+		background-color: #666666;
+		color: #fff; 
+		font-size: 2em;  
+		padding: .5em 0;  
+		border-radius: .5em; 
+	}
+
+}
+
+.info {
+	font-size: 2em; 
+}
+
+.featuredlogo {
+	width: 8em; 
+}
+
+.featured {
+	width: 40em; 
+}
+
+.max {
+	color: #409A48;
+	font-size: 4em;  
+}
+
+.austin {
+	color: #646464;
+	font-size: 2em; 
+}
 
