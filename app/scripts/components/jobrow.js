@@ -9,7 +9,7 @@ const JobRow = React.createClass({
 				<h2 className='line2'>NSONE</h2>
 				<span className='bullet'>&#8226;</span>
 				<h3 className='address'>New York, NY</h3>
-				<p>Senior Frontend Engineer.  Solve Hard Problems With a Team of Infrastructure Pros.  NSONE is based in New York...
+				<p className='description'>Senior Frontend Engineer.  Solve Hard Problems With a Team of Infrastructure Pros.  NSONE is based in New York...
 				</p>
 				<section className='keywords'>
 					<p>angularjs</p>

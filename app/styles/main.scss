@@ -105,11 +105,18 @@ h1 {
 }
 
 .line2 {
-	font-size: .75em;  
+	float:left;  
+	font-size: 1em; 
+	font-weight: 600;   
 }
 
 .bullet {
+	display:inline-block;
 	float:left;
+}
+
+.description {
+	color: #9F9F9F;
 }
 
 .keywords > p {
@@ -127,17 +134,23 @@ h1 {
 	background-color: #FAFBEA;
 
 	.looking {
-		font-size: 2em;
-		font-weight: 600;  
+		font-size: 3em;
+		font-weight: 600; 
+		color: #000;   
 	}
 
 	.profile {
-		font-size: 1em; 
+		font-size: 1.5em; 
 		color: #393C2E;
 	}
 
+	.end {
+		font-size: 1.5em; 
+	}
+
+
 	.features > li {
-		font-size: 1em; 
+		font-size: 1.5em; 
 	}
 
 
@@ -156,8 +169,15 @@ h1 {
 	font-size: 2em; 
 }
 
+
+.pictureholder {
+	position:relative;  
+}
+
+
 .featuredlogo {
 	width: 8em; 
+	position:absolute;  
 }
 
 .featured {
@@ -172,5 +192,6 @@ h1 {
 .austin {
 	color: #646464;
 	font-size: 2em; 
+	margin: 0 auto;    
 }
 
