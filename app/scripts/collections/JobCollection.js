@@ -7,5 +7,5 @@ const JobCollection = Backbone.Colletion.extend({
 });
 
 
-
+export default JobCollection;  
 

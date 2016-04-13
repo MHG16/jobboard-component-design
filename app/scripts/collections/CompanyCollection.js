@@ -7,5 +7,6 @@ const CompanyCollection = Backbone.Colletion.extend({
 });
 
 
+export default CompanyCollection;
 
 
