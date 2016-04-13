@@ -8,9 +8,10 @@ import CompanyCollection from '../collections/CompanyCollection.js';
 
 const CompanyBox = React.createClass({
 	render: function() {
+		console.log(this.props);
 		return (
 			<div class='companyinfo'>
-				<h1 className='info'>Company Information</h1>
+				<h1 className='info'>{this.props.companyName}</h1>
 				<div className='pictureholder'>
 					<img className='featuredlogo'src={featuredlogo} />
 					<img className='featured'src={featured} />

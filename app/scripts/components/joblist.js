@@ -1,8 +1,10 @@
 import React from 'react';
+import JobRow from './JobRow';
 
 const JobList = this.props.data.map((job, index, array) => {
+			
 			return (
-				<Jobs
+				<JobRow
 					key={index}
 					title={job.title}
 					company={job.company}

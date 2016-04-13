@@ -19,9 +19,13 @@ const TestComponent = React.createClass({
 	}
 });
 
+let job1 = new JobModel({title: 'vice president', company: 'Walmart', address: 'austin, tx', description: 'The job you need', keywords: 'VP salaried full-time'}); 
+
+console.log(job1);
+
 ReactDOM.render(<Navigation />,  document.querySelector('nav'));
 ReactDOM.render(<FilterBox />,  document.querySelector('main'));
-ReactDOM.render(<JobRow />, document.querySelector('.jobrow-holder'));
+ReactDOM.render(<JobRow model={job1} />, document.querySelector('.jobrow-holder'));
 ReactDOM.render(<InfoBox />, document.querySelector('.info-holder'));
-ReactDOM.render(<CompanyBox />, document.querySelector('.company-holder'));
+ReactDOM.render(<CompanyBox companyName="walmart" color="blue"/>, document.querySelector('.company-holder'));
 
