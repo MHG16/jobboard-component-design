@@ -1,6 +1,7 @@
 import React from 'react';
 import featuredlogo from './../../images/featuredlogo.jpg';
 import featured from './../../images/featured.jpg';
+import CompanyCollection from './CompanyCollection.js'
 
 
 const CompanyBox = React.createClass({

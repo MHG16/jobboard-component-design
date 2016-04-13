@@ -1,5 +1,5 @@
 import React from 'react';
-
+import JobCollection from './JobCollection.js'
 
 const JobRow = React.createClass({
 	render: function() {
