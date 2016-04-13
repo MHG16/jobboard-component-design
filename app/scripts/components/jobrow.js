@@ -1,9 +1,10 @@
 import React from 'react';
 import JobCollection from '../collections/JobCollection.js'
-import Jobs from './jobs.js';
+import JobsData from './jobsdata.js';
 
 const JobRow = React.createClass({
 	render: function() {
+
 		return (
 			<div className='jobrow'>
 				<h1 className='line1'>Senior Frontend Engineer</h1> 
@@ -22,33 +23,9 @@ const JobRow = React.createClass({
 				</section>
 			</div>   
 			);
-	}
+	},
 
 });
-
-const JobComponents = this.props.data.map((job, index, array) => {
-			return (
-				<UnicornFriend 
-					key={index}
-					title={job.title}
-					company={job.company}
-					address={job.address}
-					description={job.description}
-					keywords={job.keywords}
-				/>
-			)
-		});
-
-
-	return (
-			<div>
-				<Header/>
-				{JobComponents}
-			</div>
-		);
-	}
-})
-
 
 
 export default JobRow;
