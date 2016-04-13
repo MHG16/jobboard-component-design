@@ -7,6 +7,9 @@ import FilterBox from './components/FilterBox.js';
 import JobRow from './components/JobRow.js';
 import InfoBox from './components/InfoBox.js';
 import CompanyBox from './components/CompanyBox.js';
+import CompanyCollection from './collections/CompanyCollection';
+import JobCollection from './collections/JobCollection';
+
 
 
 const TestComponent = React.createClass({

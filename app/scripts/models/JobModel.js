@@ -1,13 +1,13 @@
 import Backbone from 'backbone';
 
 
-
 const JobModel = Backbone.Model.extend({
 	defaults: {
-		name: '',
-		power: '',
-		color: ''
-
+		title: '',
+		company: '',
+		address: '',
+		description: '',
+		keywords: ''
 	}
 
 });
