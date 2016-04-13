@@ -2,7 +2,7 @@ import React from 'react';
 import featuredlogo from './../../images/featuredlogo.jpg';
 import featured from './../../images/featured.jpg';
 import CompanyCollection from '../collections/CompanyCollection.js';
-import CompaniesData from './CompaniesData.js';
+
 
 
 

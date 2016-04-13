@@ -9,9 +9,8 @@ import InfoBox from './components/InfoBox.js';
 import CompanyBox from './components/CompanyBox.js';
 import CompanyCollection from './collections/CompanyCollection';
 import JobCollection from './collections/JobCollection';
-import JobsData from './components/JobsData.js';
-import CompaniesData from './components/CompaniesData.js';
 import JobModel from './models/JobModel.js';
+import CompanyModel from './models/CompanyModel.js'; 
 
 
 const TestComponent = React.createClass({
