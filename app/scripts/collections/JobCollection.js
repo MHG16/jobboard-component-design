@@ -2,7 +2,7 @@ import Backbone from 'backbone';
 import JobModel from '../models/JobModel';
 
 
-const JobCollection = Backbone.Colletion.extend({
+const JobCollection = Backbone.Collection.extend({
     model: JobModel
 });
 
