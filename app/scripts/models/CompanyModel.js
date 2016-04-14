@@ -5,8 +5,8 @@ const CompanyModel = Backbone.Model.extend({
 	defaults: {
 		company: '',
 		location: '',
+		background: '',
 		logo: ''
-
 	}
 
 });

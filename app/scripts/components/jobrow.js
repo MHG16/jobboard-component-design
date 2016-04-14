@@ -10,9 +10,8 @@ const JobRow = React.createClass({
 				<span className='yesterday'>yesterday</span>
 				<h2 className='line2'>{this.props.model.get('company')}</h2>
 				<span className='bullet'>&#8226;</span>
-				<h3 className='address'>New York, NY</h3>
-				<p className='description'>Senior Frontend Engineer.  Solve Hard Problems With a Team of Infrastructure Pros.  NSONE is based in New York...
-				</p>
+				<h3 className='address'>{this.props.model.get('address')}</h3>
+				<p className='description'>{this.props.model.get('description')}</p>
 				<section className='keywords'>
 					<p>angularjs</p>
 					<p>d3.js</p>

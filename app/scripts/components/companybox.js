@@ -11,13 +11,13 @@ const CompanyBox = React.createClass({
 		console.log(this.props);
 		return (
 			<div class='companyinfo'>
-				<h1 className='info'>{this.props.companyName}</h1>
+				<h1 className='info'>Company Information</h1>
 				<div className='pictureholder'>
-					<img className='featuredlogo'src={featuredlogo} />
-					<img className='featured'src={featured} />
+					<img className='featuredlogo'src={this.props.model.get('logo')} />
+					<img className='featured'src={this.props.model.get('background')}/>
 				</div>
-				<h1 className='max'>Max Play</h1>
-				<h2 className='austin'>Austin Texas</h2>
+				<h1 className='max'>{this.props.model.get('company')}</h1>
+				<h2 className='austin'>{this.props.model.get('location')}</h2>
 
 			</div>   
 			);
