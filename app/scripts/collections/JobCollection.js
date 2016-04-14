@@ -3,7 +3,7 @@ import JobModel from '../models/JobModel';
 
 
 const JobCollection = Backbone.Collection.extend({
-    model: JobModel
+    model: JobModel,
     url: 'http://tiny-za-server.herokuapp.com/collections/mhgrossmann'
 });
 
