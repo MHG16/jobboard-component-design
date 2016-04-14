@@ -4,6 +4,7 @@ import JobCollection from '../collections/JobCollection.js'
 const JobForm = React.createClass({
 	
 		handleSubmit: function(e) {
+			console.log('you clicked submit');
 		e.preventDefault();  
  		let newJob = {
  			title: this.refs.title.value,
@@ -14,7 +15,7 @@ const JobForm = React.createClass({
 
  		};
 		
- 		jobCollection.create(newJob);
+ 		JobCollection.create(newJob);
 
  	},
 
@@ -28,30 +29,25 @@ const JobForm = React.createClass({
 					<h2>Title</h2>
 					<input type='text' 
 						className='input-title'
-						placeholder='title'
 						ref='title' />
 					<h2>Company Name</h2>
 					<input type='text' 
 						className='input-company'
-						placeholder='company' 
 						ref='company'/>
 					<h2>Location</h2>
 					<input type='text' 
 						className='input-location' 
-						placeholder='location'
 						ref='location' />
 					<h2>Description</h2>
 					<input type='text' 
 						className='input-description' 
-						placeholder='description'
 						ref='description' />
 					<h2>Tags</h2>
 					<input type='text' 
 						className='input-tags'
-						placeholder='tags'
 						ref='tags' />
 					<div class='button'>
-						<button type='button' 
+						<button type='submit' 
 							className='submit-job'>Submit Job</button>
 					</div>  
 				</div>   

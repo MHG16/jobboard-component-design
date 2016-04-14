@@ -12,6 +12,7 @@ import JobCollection from './collections/JobCollection';
 import JobModel from './models/JobModel.js';
 import CompanyModel from './models/CompanyModel.js'; 
 import JobForm from './components/JobForm.js';
+import jobs from './collections/JobCollection.js'; 
 
 const App = React.createClass({
 	getInitialState: function() {
@@ -41,7 +42,7 @@ const App = React.createClass({
   			comapny={val.get('company')}
   			address={val.get('address')}
   			description={val.get('description')}
-  			keywords={val.get('keywords')}
+  			keywords={val.get('keywords')} /> 
 
   		)
 
@@ -54,10 +55,6 @@ const App = React.createClass({
     )
   }
 });
-
-
-
-
 
 
 

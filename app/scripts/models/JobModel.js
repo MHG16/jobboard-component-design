@@ -5,9 +5,9 @@ const JobModel = Backbone.Model.extend({
 	defaults: {
 		title: '',
 		company: '',
-		address: '',
+		location: '',
 		description: '',
-		keywords: ''
+		tags: ''
 	},
 
 	rootUrl: 'http://tiny-za-server.herokkuapp.com/collections/mhgrossmann',
