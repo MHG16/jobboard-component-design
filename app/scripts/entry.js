@@ -23,7 +23,7 @@ const App = React.createClass({
 			console.log('a job was added to the collection', this.state);
 			this.setState({jobs: JobCollection})
 		});
-		UnicornCollection.fetch();
+		JobCollection.fetch();
 
 		console.log('the app component mounted');
 
@@ -37,16 +37,18 @@ const App = React.createClass({
   		return (
   			<JobRow 
   			key={val.get('_id')}
-  			name={val.get('name')}
-  			color={val.get('color')}
-  			power={val.get('power')}/> 
+  			title={val.get('title')}
+  			comapny={val.get('company')}
+  			address={val.get('address')}
+  			description={val.get('description')}
+  			keywords={val.get('keywords')}
 
   		)
 
   	});
     return (
     	<div>
-	    	<UniForm/>
+	    	<JobForm/>
 	    	{JobRows}
     	</div>
     )
