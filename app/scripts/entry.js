@@ -11,13 +11,53 @@ import CompanyCollection from './collections/CompanyCollection';
 import JobCollection from './collections/JobCollection';
 import JobModel from './models/JobModel.js';
 import CompanyModel from './models/CompanyModel.js'; 
+import JobForm from './components/JobForm.js';
+
+const App = React.createClass({
+	getInitialState: function() {
+		return {jobs: []}
+	},
+
+	componentDidMount: function() {
+		JobCollection.on('add', () => {
+			console.log('a job was added to the collection', this.state);
+			this.setState({jobs: JobCollection})
+		});
+		UnicornCollection.fetch();
+
+		console.log('the app component mounted');
+
+	},
 
 
-const TestComponent = React.createClass({
-	render: function() {
-		return <h1>Test~</h1>;
-	}
+  render: function() {
+  	//this will give us back an array of components
+  	//each of the values will be a backbone model  
+  	const JobRows = this.state.jobs.map((val, i, arr) => {
+  		return (
+  			<JobRow 
+  			key={val.get('_id')}
+  			name={val.get('name')}
+  			color={val.get('color')}
+  			power={val.get('power')}/> 
+
+  		)
+
+  	});
+    return (
+    	<div>
+	    	<UniForm/>
+	    	{JobRows}
+    	</div>
+    )
+  }
 });
+
+
+
+
+
+
 
 //instantiate a JobModel with data
 let job1 = new JobModel({
@@ -48,4 +88,5 @@ ReactDOM.render(<InfoBox />, document.querySelector('.info-holder'));
 
 
 ReactDOM.render(<CompanyBox model={company1} />, document.querySelector('.company-holder'));
+ReactDOM.render(<JobForm />, document.querySelector('.form-holder'));
 
