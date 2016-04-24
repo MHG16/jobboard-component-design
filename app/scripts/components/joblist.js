@@ -1,7 +1,9 @@
 import React from 'react';
 import JobRow from './JobRow';
 
-const JobList = this.props.data.map((job, index, array) => {
+const JobList = React.createClass ({
+	render: function () {
+		let JobComponents = this.props.data.map((job, index, array) => {
 			
 			return (
 				<JobRow
@@ -12,13 +14,15 @@ const JobList = this.props.data.map((job, index, array) => {
 					description={job.description}
 					keywords={job.keywords}/>
 			)
+		});
 
 		return (
 			<div>
 				<Header/>
 				{JobComponents}
 			</div>
-		)
+		);
+	}
 });
 
 

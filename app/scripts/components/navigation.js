@@ -21,12 +21,4 @@ const Navigation = React.createClass({
 
 
 
-
-
-
-
-
-
-
-
 export default Navigation;
