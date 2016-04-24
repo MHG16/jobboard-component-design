@@ -16,8 +16,8 @@ const CompanyBox = React.createClass({
 					<img className='featuredlogo'src={this.props.model.get('logo')} />
 					<img className='featured'src={this.props.model.get('background')}/>
 				</div>
-				<h1 className='max'>{this.props.model.get('company')}</h1>
-				<h2 className='austin'>{this.props.model.get('location')}</h2>
+				<h1 className='companyName'>{this.props.model.get('company')}</h1>
+				<h2 className='location'>{this.props.model.get('location')}</h2>
 
 			</div>   
 			);

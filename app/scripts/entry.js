@@ -50,7 +50,7 @@ const App = React.createClass({
     return (
     	<div>
 	    	<JobForm/>
-	    	{JobRows}
+	    	{JobRow}
     	</div>
     )
   }
